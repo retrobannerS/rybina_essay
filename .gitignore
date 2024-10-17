@@ -1,0 +1,5 @@
+.venv
+.DS_Store
+out
+tmp
+__pycache__
