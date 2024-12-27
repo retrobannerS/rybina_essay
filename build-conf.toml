@@ -14,47 +14,34 @@ args = [
     "--citeproc",                                             # включить обработку цитирований, нужно указать bibliography
     "--csl=gost-numeric.csl"
 ]
-src = ["*"]
+src = ["_introducing.md", "1.0.md", "1.1.md", "1.2.md", "1.3.md", "2.0.md", "2.1.md", "2.2.md", "2.3.md", "2.4.md", "2.5.md", "3.0.md", "conclusion.md", "references.md"]
 out-name = "output.pdf"
 
 [metadata.general]
-title = "Реферат на тему:"
-subtitle = "История развития интеллектуальных систем в авиации"
-# abstract = ""
+title = "«Введение в интеллектуальные системы и технологии»"
+subtitle = "Тема: «История развития интеллектуальных систем в авиации»"
 author = ["Баранов А. Т."]
 date = "2024"
 lang = "ru"
-link-citations = true
 
 [metadata.layout]
 documentclass = "scrartcl"    
 classoption = "russian"                                                # параметр класса документа(scrartcl, scrbook или scrreprt), если book или report(scrbook или scrreport), то включить параметр book 
-geometry = "left=30mm, right=10mm, top=20mm, bottom=20mm, footskip=0cm"          # поля страницы
+geometry = "left=30mm, right=10mm, top=20mm, bottom=20mm, footskip=0.5cm"          # поля страницы
 indent = true                                                                # отступы в абзацах
 linestretch = 1.5                                                            # межстрочный интервал
-
-# pagestyle = "plain"     # стиль страницы (plain, headings, empty для article). связано с колонтитулами
 papersize = "a4"          # размер бумаги (a4, letter, ...)
 
 [metadata.fonts]
-# fontfamily = "libertinus"        # семейство шрифтов для использования с pdflatex
-# fontfamilyoptions = "osf, p, sc" # опции fontfamily
 fontsize = "12pt"                  # размер шрифта для body text
-
 mainfont = "Times New Roman"                   #
 sansfont = "Times New Roman"                   #
 monofont = "Times New Roman"                  #  семейства шрифтов для использования 
 mathfont = "Times New Roman"                   #  с xelatex или lualatex
 
-# mainfontoptions = "BoldFont={Times New Roman Bold}"           #
-# sansfontoptions = "..."           #
-# monofontoptions = "..."           #  
-# mathfontoptions = "..."           # опции шрифтов
-
-
 [metadata.links]
+link-citations = true   # добавить ссылки на источники в списке литературы
 colorlinks = true        # добавить цвет к тексту ссылки; автоматически включается, если установлено любое из значений linkcolor, filecolor, citecolor, urlcolor или toccolor
-# boxlinks = true        # добавить рамку к ссылкам (нет эффекта если colorlinks = true) 
 linkcolor = "NavyBlue"   # цвет внутренних ссылок
 filecolor = "magenta"    # цвет ссылок на файлы
 citecolor = "violet"     # цвет ссылок на источники
@@ -68,11 +55,8 @@ toc = true               # включить оглавление
 toc-depth = 3            # глубина оглавления
 
 [metadata.bibliography]
-#biblatexoptions = ["backend=biber", "style=gost-numeric", "sorting=none"]               # опции для пакета biblatex
-# biblio-style = "alphabetic"        # стиль библиографии
 biblio-title = "Список литературы" # заголовок библиографии
 bibliography = "bibliography.bib"    # путь к файлу библиографии
-# natbiboptions = []                 # опции для пакета natbib
 
 [metadata.template.titlepage]
 titlepage = true                            # включить титульную страницу
@@ -84,18 +68,12 @@ logo-width = "35.6mm"                         # ширина логотипа
 [metadata.template.toc]
 toc-own-page = true                         # оглавление на отдельной странице
 
-
-
 [metadata.template.caption]
 caption-justification = "centering"         # выравнивание подписей к рисункам или таблицам по центру
 caption-color = "000000"                    # цвет подписей
 
 [metadata.template.footnotes]
 footnotes-pretty = true                     # настройка сносок
-# footnotes-disable-backlinks = true        # отключение обратных ссылок в сносках
-
-[metadata.template.headerandfooter]
-# disable-header-and-footer = true          # отключение колонтитулов
 
 [metadata.template.header]
 header-left = '\ '    # левый верхний колонтитул: номер страницы
@@ -117,7 +95,7 @@ header-includes: |
     \setkomafont{subsubsection}{\fontsize{12}{14}\selectfont\bfseries}
 ''' 
 
-
+[metadata.template.headerandfooter]
 
 [metadata.fonts.babelfonts]
 
