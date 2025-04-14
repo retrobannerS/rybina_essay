@@ -1,10 +1,8 @@
 # Реферат по курсу «Введение в интеллектуальные системы и технологии» в НИЯУ МИФИ.
 
-Реферат написан в формате `markdown` и переведён в `pdf` с помощью [pandoc](https://pandoc.org). Исходные `markdown` файлы вы можете найти [здесь](./src)
+Тема реферата: **«История интеллектуальных систем в авиации»**
 
-Отчёт находится в папке [report](./report). Исходный `markdown` файл вы можете найти [здесь](./report/src/report.md) Для перевода в `pdf` необходимо запустить `python` [скрипт](./scripts/build.py). Подробнее о конвертации можно прочитать в [проекте](https://github.com/retrobannerS/pandoc_markdown_build_system).
-
-Отчёт по лабораторной работе написан в формате `markdown` и переведён в `pdf` с помощью [pandoc](https://pandoc.org). Исходные `markdown` файлы вы можете найти [здесь](./src/). Для перевода в `pdf` необходимо запустить `python` [скрипт](./scripts/build.py). Подробнее о конвертации можно прочитать в [проекте](https://github.com/retrobannerS/pandoc_markdown_build_system).
+Реферат написан в формате `markdown` и переведён в `pdf` с помощью [pandoc](https://pandoc.org). Исходные `markdown` файлы вы можете найти [здесь](./src). Для перевода в `pdf` необходимо запустить `python` [скрипт](./scripts/build.py). Подробнее о конвертации можно прочитать в [проекте](https://github.com/retrobannerS/pandoc_markdown_build_system).
 
 # Шаблон
 
